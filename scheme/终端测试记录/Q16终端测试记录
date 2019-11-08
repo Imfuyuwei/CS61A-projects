@@ -1,0 +1,424 @@
+Last login: Tue Apr 10 10:19:02 on ttys000
+airbears2-10-142-150-107:~ fuyuwei$ cd downloads/cs61a/scheme
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 16 -u
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Problem 16 > Suite 1 > Case 1
+(cases remaining: 2)
+
+
+scm> (define y 1)
+? y
+-- OK! --
+
+scm> (define f (mu (x) (+ x y)))
+? f
+-- OK! --
+
+scm> (define g (lambda (x y) (f (+ x x))))
+? g
+-- OK! --
+
+scm> (g 3 7)
+? 13
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 16 > Suite 2 > Case 1
+(cases remaining: 1)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+OK! All cases for Problem 16 unlocked.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ open scheme.py
+airbears2-10-142-150-107:scheme fuyuwei$ open scheme.py
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 16 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok --submit
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 17 > Suite 1 > Case 1
+
+scm> (load 'questions)
+
+scm> (enumerate '(3 4 5 6))
+replace-this-line
+
+# Error: expected
+#     ((0 3) (1 4) (2 5) (3 6))
+# but got
+#     replace-this-line
+
+Run only this test case with "python3 ok -q 17 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    93 test cases passed before encountering first failed test case
+
+Submit... 100% complete
+Submission successful for user: fuyuwei@berkeley.edu
+URL: https://okpy.org/cal/cs61a/sp18/proj04/submissions/2RZPRW
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 01
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    8 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 02
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    8 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 03
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    5 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 04
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    4 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 05
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    5 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 06
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    6 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 07
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    6 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 08
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    6 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 09
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    4 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 10
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    6 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 11
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    6 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 12
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    4 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 13
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    9 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 14
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    5 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 15
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    5 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok -q 16
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ python3 ok --submit
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 17 > Suite 1 > Case 1
+
+scm> (load 'questions)
+
+scm> (enumerate '(3 4 5 6))
+replace-this-line
+
+# Error: expected
+#     ((0 3) (1 4) (2 5) (3 6))
+# but got
+#     replace-this-line
+
+Run only this test case with "python3 ok -q 17 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    93 test cases passed before encountering first failed test case
+
+Submit... 100% complete
+Submission successful for user: fuyuwei@berkeley.edu
+URL: https://okpy.org/cal/cs61a/sp18/proj04/submissions/zmOD6q
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-107:scheme fuyuwei$ 

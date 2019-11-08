@@ -1,0 +1,424 @@
+Last login: Sat Apr  7 21:43:30 on ttys000
+fuyuweideAir:~ fuyuwei$ cd downloads/cs61a.scheme
+-bash: cd: downloads/cs61a.scheme: No such file or directory
+fuyuweideAir:~ fuyuwei$ cd downloads/cs61a/scheme
+fuyuweideAir:scheme fuyuwei$ python3 -i scheme.py
+scm> (eval (define tau 6.28))
+6.28
+scm> (eval 'tau)
+scm> tau
+6.28
+scm> (define x 15)
+x
+scm> x
+15
+scm> (define y (* 2 x))
+y
+scm> (+ y (* y 2) 1)
+91
+scm> (exit)
+
+>>> exit()
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 07 -u
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Problem 7 > Suite 1 > Case 1
+(cases remaining: 6)
+
+Q: What is the structure of the expressions argument to do_quote_form?
+Choose the number of the correct choice:
+0) [A], where:
+       A is the quoted expression
+1) Pair(A, nil), where:
+       A is the quoted expression
+2) Pair('quote', Pair(A, nil)), where:
+       A is the quoted expression
+3) A, where:
+       A is the quoted expression
+? 1
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 7 > Suite 2 > Case 1
+(cases remaining: 5)
+
+
+scm> (quote hello)
+? hello
+-- OK! --
+
+scm> 'hello
+? hello
+-- OK! --
+
+scm> ''hello
+Choose the number of the correct choice:
+0) (hello)
+1) hello
+2) (quote hello)
+3) (quote (quote (hello)))
+? 2
+-- OK! --
+
+scm> (quote (1 2))
+? (1 2)
+-- OK! --
+
+scm> '(1 2)
+? (1 2)
+-- OK! --
+
+scm> (quote (1 . 2))
+? (1 . 2)
+-- OK! --
+
+scm> '(1 . (2))
+? (1 . (2))
+-- Not quite. Try again! --
+
+? (1 2)
+-- OK! --
+
+scm> (car '(1 2 3))
+? 1
+-- OK! --
+
+scm> (cdr '(1 2))
+? 2
+-- Not quite. Try again! --
+
+? (2)
+-- OK! --
+
+scm> (car (car '((1))))
+? 1
+-- OK! --
+
+scm> (quote 3)
+? 3
+-- OK! --
+
+scm> (eval (cons 'car '('(4 2))))
+? 4
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 7 > Suite 3 > Case 1
+(cases remaining: 4)
+
+>>> from scheme_reader import *
+>>> read_line(" (quote x) ")
+Choose the number of the correct choice:
+0) Pair('quote', Pair('x', nil))
+1) 'x'
+2) Pair('x', nil)
+3) Pair('quote', 'x')
+? 
+-- Not quite. Try again! --
+
+Choose the number of the correct choice:
+0) Pair('quote', Pair('x', nil))
+1) 'x'
+2) Pair('x', nil)
+3) Pair('quote', 'x')
+? 0
+-- OK! --
+
+>>> read_line(" 'x ")
+Choose the number of the correct choice:
+0) Pair('quote', 'x')
+1) 'x'
+2) Pair('quote', Pair('x', nil))
+3) Pair('x', nil)
+? 2
+-- OK! --
+
+>>> read_line(" (a b) ")
+Choose the number of the correct choice:
+0) Pair('quote', Pair('a', Pair('b', nil)))
+1) Pair('quote', Pair(Pair('a', Pair('b', nil)), nil))
+2) Pair('quote', Pair('a', 'b'))
+3) Pair('a', Pair('b', nil))
+? 3
+-- OK! --
+
+>>> read_line(" '(a b) ")
+Choose the number of the correct choice:
+0) Pair('a', Pair('b', nil))
+1) Pair('quote', Pair(Pair('a', Pair('b', nil)), nil))
+2) Pair('quote', Pair('a', Pair('b', nil)))
+3) Pair('quote', Pair('a', 'b'))
+? 2
+-- Not quite. Try again! --
+
+Choose the number of the correct choice:
+0) Pair('a', Pair('b', nil))
+1) Pair('quote', Pair(Pair('a', Pair('b', nil)), nil))
+2) Pair('quote', Pair('a', Pair('b', nil)))
+3) Pair('quote', Pair('a', 'b'))
+? 1
+-- OK! --
+
+>>> read_line(" '((a)) ")
+Choose the number of the correct choice:
+0) Pair('quote', Pair(Pair('a', nil), nil), nil)
+1) Pair('quote', Pair(Pair('a'), nil), nil)
+2) Pair('quote', Pair(Pair('a'), nil))
+3) Pair('quote', Pair(Pair('a', nil), nil))
+4) Pair('quote', Pair(Pair(Pair('a', nil), nil), nil))
+? 4
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 7 > Suite 3 > Case 2
+(cases remaining: 3)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 7 > Suite 3 > Case 3
+(cases remaining: 2)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 7 > Suite 3 > Case 4
+(cases remaining: 1)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+OK! All cases for Problem 7 unlocked.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 -i scheme.py
+scm> (quote a)
+a
+scm> (car (quote (a b)))
+a
+scm> (exit)
+
+>>> exit()
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 07 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 7 > Suite 2 > Case 1
+
+scm> (quote hello)
+hello
+scm> 'hello
+# Error: malformed list: (quote . hello)
+
+# Error: expected
+#     hello
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: malformed list: (quote . hello)
+
+Run only this test case with "python3 ok -q 07 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    1 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 07 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 7 > Suite 2 > Case 1
+
+scm> (quote hello)
+hello
+scm> 'hello
+# Error: malformed list: (quote . hello)
+
+# Error: expected
+#     hello
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: malformed list: (quote . hello)
+
+Run only this test case with "python3 ok -q 07 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    1 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 07 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 7 > Suite 2 > Case 1
+
+scm> (quote hello)
+hello
+scm> 'hello
+Traceback (most recent call last):
+k (most recent call last):
+  File "ok/client/sources/ok_test/scheme.py", line 56, in evaluate
+    exp = self.scheme.read_line(code)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 178, in read_line
+    return scheme_read(Buffer(tokenize_lines([line])))
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 121, in scheme_read
+    return Pair('quote', Pair(scheme_read(src)))
+TypeError: __init__() missing 1 required positional argument: 'second'
+
+# Error: expected
+#     hello
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     TypeError: __init__() missing 1 required positional argument: 'second'
+
+Run only this test case with "python3 ok -q 07 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    1 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 07 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    6 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok --submit
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+
+There are still locked tests! Use the -u option to unlock them
+---------------------------------------------------------------------
+Test summary
+    Locked: 2
+    46 test cases passed! No cases failed.
+
+Submit... 100% complete
+Submission successful for user: fuyuwei@berkeley.edu
+URL: https://okpy.org/cal/cs61a/sp18/proj04/submissions/r043Mw
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 -i scheme.py
+scm> (eval (define tau 6.28))
+6.28
+scm> (eval tau)
+6.28
+scm> (eval 'tau)
+6.28
+scm> tau
+6.28
+scm> '1
+1
+scm> 'tau
+tau
+scm> (eval '(cons 1 2))
+(1 . 2)
+scm> (exit)
+
+>>> exit()
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 07 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    6 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok --submit
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+
+There are still locked tests! Use the -u option to unlock them
+---------------------------------------------------------------------
+Test summary
+    Locked: 2
+    46 test cases passed! No cases failed.
+
+Submit... 100% complete
+Submission successful for user: fuyuwei@berkeley.edu
+URL: https://okpy.org/cal/cs61a/sp18/proj04/submissions/Z4QLpE
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ 

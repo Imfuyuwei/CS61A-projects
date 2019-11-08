@@ -1,0 +1,345 @@
+Last login: Sun Apr  8 18:49:49 on ttys000
+airbears2-10-142-151-141:~ fuyuwei$ cd downloads/cs61a/scheme
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok -q 12 -u
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Problem 12 > Suite 1 > Case 1
+(cases remaining: 4)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 12 > Suite 1 > Case 2
+(cases remaining: 3)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 12 > Suite 2 > Case 1
+(cases remaining: 2)
+
+
+scm> (define (outer x y)
+....   (define (inner z x)
+....     (+ x (* y 2) (* z 3)))
+....   (inner x 10))
+? outer
+-- OK! --
+
+scm> (outer 1 2)
+? 17
+-- OK! --
+
+scm> (define (outer-func x y)
+....   (define (inner z x)
+....     (+ x (* y 2) (* z 3)))
+....   inner)
+? outer-func
+-- OK! --
+
+scm> ((outer-func 1 2) 1 10)
+? 17
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 12 > Suite 2 > Case 2
+(cases remaining: 1)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+OK! All cases for Problem 12 unlocked.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok -q 12 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 12 > Suite 2 > Case 1
+
+scm> (define (outer x y)
+....   (define (inner z x)
+....     (+ x (* y 2) (* z 3)))
+....   (inner x 10))
+outer
+scm> (outer 1 2)
+17
+scm> (define (outer-func x y)
+....   (define (inner z x)
+....     (+ x (* y 2) (* z 3)))
+....   inner)
+outer-func
+scm> ((outer-func 1 2) 1 10)
+# Error: unknown identifier: y
+
+# Error: expected
+#     17
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: unknown identifier: y
+
+Run only this test case with "python3 ok -q 12 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok -q 12 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 12 > Suite 1 > Case 1
+
+scm> (define (square x) (* x x))
+square
+scm> square
+(lambda (x) (* x x))
+scm> (square 21)
+Traceback (most recent call last):
+k (most recent call last):
+  File "ok/client/sources/ok_test/scheme.py", line 58, in evaluate
+    (exp, self._frame))
+  File "ok/client/utils/timer.py", line 33, in timed
+    raise submission.error
+  File "ok/client/utils/timer.py", line 49, in run
+    self.result = self.fn(*self.args, **self.kargs)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 36, in scheme_eval
+    return scheme_apply(procedure, args, env)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 51, in scheme_apply
+    return eval_all(procedure.body, new_env)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 62, in eval_all
+    return scheme_eval(expressions.first, env)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 34, in scheme_eval
+    procedure = scheme_eval(first, env)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 22, in scheme_eval
+    return env.lookup(expr)
+AttributeError: 'NoneType' object has no attribute 'lookup'
+
+# Error: expected
+#     441
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     AttributeError: 'NoneType' object has no attribute 'lookup'
+
+Run only this test case with "python3 ok -q 12 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok -q 12 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    4 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok -q 12 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    4 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok -q 12 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    4 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok --submit
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+
+There are still locked tests! Use the -u option to unlock them
+---------------------------------------------------------------------
+Test summary
+    Locked: 4
+    72 test cases passed! No cases failed.
+
+Submit... 100% complete
+Submission successful for user: fuyuwei@berkeley.edu
+URL: https://okpy.org/cal/cs61a/sp18/proj04/submissions/0gzwlv
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok -q tests.scm
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Scheme tests in tests.scm
+
+test failed at line 18
+  expected False
+   printed #f
+test failed at line 21
+  expected SchemeError: wrong number of arguments were passed into the function
+   printed Error: wrong number of arguments were passed into the function
+test failed at line 30
+  expected (car ((quote (1 2))))
+   printed (car (quote (1 2)))
+17 passed; 3 failed
+---------------------------------------------------------------------
+Test summary
+    17 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok -q tests.scm
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Scheme tests in tests.scm
+
+20 passed; 0 failed
+-- OK! --
+
+---------------------------------------------------------------------
+Test summary
+    20 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok -q tests.scm
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Scheme tests in tests.scm
+
+32 passed; 0 failed
+-- OK! --
+
+---------------------------------------------------------------------
+Test summary
+    32 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok -q tests.scm
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Scheme tests in tests.scm
+
+20 passed; 0 failed
+-- OK! --
+
+---------------------------------------------------------------------
+Test summary
+    20 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ 

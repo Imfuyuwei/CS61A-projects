@@ -1,0 +1,92 @@
+Last login: Sun Apr  8 16:41:10 on ttys000
+airbears2-10-142-151-141:~ fuyuwei$ cd dwonloads/cs61a/scheme
+-bash: cd: dwonloads/cs61a/scheme: No such file or directory
+airbears2-10-142-151-141:~ fuyuwei$ cd downloads/cs61a/scheme
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok -q 10 -u
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Problem 10 > Suite 1 > Case 1
+(cases remaining: 6)
+
+
+scm> (define (f x y) (+ x y))
+? f
+-- OK! --
+
+scm> f
+Choose the number of the correct choice:
+0) (lambda (f x y) (+ x y))
+1) (f (x y) (+ x y))
+2) (define f (lambda (x y) (+ x y)))
+3) (lambda (x y) (+ x y))
+? 3
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 10 > Suite 1 > Case 2
+(cases remaining: 5)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 10 > Suite 1 > Case 3
+(cases remaining: 4)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 10 > Suite 1 > Case 4
+(cases remaining: 3)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 10 > Suite 1 > Case 5
+(cases remaining: 2)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 10 > Suite 2 > Case 1
+(cases remaining: 1)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+OK! All cases for Problem 10 unlocked.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ open scheme.py
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok -q 10 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    6 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ 

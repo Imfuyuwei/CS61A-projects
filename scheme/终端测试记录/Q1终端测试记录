@@ -1,0 +1,1127 @@
+Last login: Mon Apr  2 21:10:52 on console
+fuyuweideMacBook-Air:~ fuyuwei$ cd downloads
+fuyuweideMacBook-Air:downloads fuyuwei$ cd cs61a
+fuyuweideMacBook-Air:cs61a fuyuwei$ cd scheme
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 -u
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+(cases remaining: 8)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 2
+(cases remaining: 7)
+
+>>> from scheme_reader import *
+>>> tokens = tokenize_lines(["(+ 1 ", "(23 4)) ("])
+>>> src = Buffer(tokens)
+>>> src.current()
+? ['(', '+', '1', '(', '23', '4',')', ')', '(']
+-- Not quite. Try again! --
+
+? (
+-- Not quite. Try again! --
+
+? '('
+-- OK! --
+
+>>> src.remove_front()
+? '('
+-- OK! --
+
+>>> src.current()
+? '+'
+-- OK! --
+
+>>> src.remove_front()
+? "+"
+-- OK! --
+
+>>> src.remove_front()
+? 1
+-- OK! --
+
+>>> scheme_read(src)  # Returns and removes the next complete expression in src
+? (23 4)
+-- Not quite. Try again! --
+
+? 23
+-- Not quite. Try again! --
+
+? '('
+-- Not quite. Try again! --
+
+? Error
+-- Not quite. Try again! --
+
+? nil
+-- Not quite. Try again! --
+
+? error
+-- Not quite. Try again! --
+
+? (Pair 23 Pair(4 nil))
+-- Not quite. Try again! --
+
+? Pair(23, Pair(4, nil))
+-- OK! --
+
+>>> src.current()
+? ')'
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 3
+(cases remaining: 6)
+
+>>> from scheme_reader import *
+>>> scheme_read(Buffer(tokenize_lines(['(23 4)'])))
+? Pair(23, Pair(4, nil))
+-- OK! --
+
+>>> read_line('(23 4)')  # Shorter version of above!
+? Pair(23, Pair(4, nil))
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 4
+(cases remaining: 5)
+
+>>> from scheme_reader import *
+>>> read_tail(Buffer(tokenize_lines([')'])))
+? nil
+-- OK! --
+
+>>> read_tail(Buffer(tokenize_lines(['1 2 3)'])))
+? 2
+-- Not quite. Try again! --
+
+? Pair(2, Pair(3, nil))
+-- Not quite. Try again! --
+
+? '1 2 3)'
+-- Not quite. Try again! --
+
+? error
+-- Not quite. Try again! --
+
+? Error
+-- Not quite. Try again! --
+
+? Pair(1, Pair(2, Pair(3, nil)))
+-- OK! --
+
+>>> read_tail(Buffer(tokenize_lines(['2 (3 4))'])))
+? Pair(2, Pair(Pair(3, Pair(4, nil)), nil))
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 5
+(cases remaining: 4)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 6
+(cases remaining: 3)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 7
+(cases remaining: 2)
+
+>>> from scheme_reader import *
+>>> read_line("(+ (- 2 3) 1)")
+Choose the number of the correct choice:
+0) Pair('+', Pair('-', Pair(2, Pair(3, nil))), Pair(1, nil))
+1) Pair('+', Pair(Pair('-', Pair(2, Pair(3, nil))), Pair(1, nil)))
+2) Pair('+', Pair('-', Pair(2, Pair(3, Pair(1, nil)))))
+? 1
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 8
+(cases remaining: 1)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+OK! All cases for Problem 1 unlocked.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> scheme_read(Buffer(tokenize_lines(['nil'])))
+
+# Error: expected
+#     nil
+# but got
+
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> scheme_read(Buffer(tokenize_lines(['nil'])))
+'nil'
+
+# Error: expected
+#     nil
+# but got
+#     'nil'
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> scheme_read(Buffer(tokenize_lines(['nil'])))
+nil
+>>> scheme_read(Buffer(tokenize_lines(['1'])))
+1
+>>> scheme_read(Buffer(tokenize_lines(['true'])))
+True
+>>> read_line('3')
+3
+>>> read_line('-123')
+-123
+>>> read_line('1.25')
+1.25
+>>> read_line('true')
+True
+>>> read_line('(a)')
+Traceback (most recent call last):
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 173, in read_line
+    return scheme_read(Buffer(tokenize_lines([line])))
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 117, in scheme_read
+    return read_tail(val)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 139, in read_tail
+    if src.current() is None:
+AttributeError: 'str' object has no attribute 'current'
+
+# Error: expected
+#     Pair('a', nil)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     AttributeError: 'str' object has no attribute 'current'
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> scheme_read(Buffer(tokenize_lines(['nil'])))
+nil
+>>> scheme_read(Buffer(tokenize_lines(['1'])))
+1
+>>> scheme_read(Buffer(tokenize_lines(['true'])))
+True
+>>> read_line('3')
+3
+>>> read_line('-123')
+-123
+>>> read_line('1.25')
+1.25
+>>> read_line('true')
+True
+>>> read_line('(a)')
+Traceback (most recent call last):
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 174, in read_line
+    return scheme_read(Buffer(tokenize_lines([line])))
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 117, in scheme_read
+    return read_tail(val)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 139, in read_tail
+    if src.current() is None:
+AttributeError: 'str' object has no attribute 'current'
+
+# Error: expected
+#     Pair('a', nil)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     AttributeError: 'str' object has no attribute 'current'
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> scheme_read(Buffer(tokenize_lines(['nil'])))
+nil
+>>> scheme_read(Buffer(tokenize_lines(['1'])))
+1
+>>> scheme_read(Buffer(tokenize_lines(['true'])))
+True
+>>> read_line('3')
+3
+>>> read_line('-123')
+-123
+>>> read_line('1.25')
+1.25
+>>> read_line('true')
+True
+>>> read_line('(a)')
+Traceback (most recent call last):
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 174, in read_line
+    return scheme_read(Buffer(tokenize_lines([line])))
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 117, in scheme_read
+    return read_tail(val)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 139, in read_tail
+    if src.current() is None:
+AttributeError: 'str' object has no attribute 'current'
+
+# Error: expected
+#     Pair('a', nil)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     AttributeError: 'str' object has no attribute 'current'
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> scheme_read(Buffer(tokenize_lines(['nil'])))
+
+# Error: expected
+#     nil
+# but got
+
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> scheme_read(Buffer(tokenize_lines(['nil'])))
+nil
+>>> scheme_read(Buffer(tokenize_lines(['1'])))
+1
+>>> scheme_read(Buffer(tokenize_lines(['true'])))
+True
+>>> read_line('3')
+3
+>>> read_line('-123')
+-123
+>>> read_line('1.25')
+1.25
+>>> read_line('true')
+True
+>>> read_line('(a)')
+
+# Error: expected
+#     Pair('a', nil)
+# but got
+
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> scheme_read(Buffer(tokenize_lines(['nil'])))
+nil
+>>> scheme_read(Buffer(tokenize_lines(['1'])))
+1
+>>> scheme_read(Buffer(tokenize_lines(['true'])))
+True
+>>> read_line('3')
+3
+>>> read_line('-123')
+-123
+>>> read_line('1.25')
+1.25
+>>> read_line('true')
+True
+>>> read_line('(a)')
+
+# Error: expected
+#     Pair('a', nil)
+# but got
+
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> scheme_read(Buffer(tokenize_lines(['nil'])))
+nil
+>>> scheme_read(Buffer(tokenize_lines(['1'])))
+1
+>>> scheme_read(Buffer(tokenize_lines(['true'])))
+True
+>>> read_line('3')
+3
+>>> read_line('-123')
+-123
+>>> read_line('1.25')
+1.25
+>>> read_line('true')
+True
+>>> read_line('(a)')
+Pair(')', <buffer.Buffer object at 0x104720dd8>)
+
+# Error: expected
+#     Pair('a', nil)
+# but got
+#     Pair(')', <buffer.Buffer object at 0x104720dd8>)
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 5
+
+>>> from scheme_reader import *
+>>> read_tail(Buffer(tokenize_lines(['(1 2 3)'])))
+Pair(Pair(1, Pair(2, Pair(3, nil))), nil)
+
+# Error: expected
+#     SyntaxError
+# but got
+#     Pair(Pair(1, Pair(2, Pair(3, nil))), nil)
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 5"
+---------------------------------------------------------------------
+Test summary
+    4 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> scheme_read(Buffer(tokenize_lines(['nil'])))
+nil
+>>> scheme_read(Buffer(tokenize_lines(['1'])))
+1
+>>> scheme_read(Buffer(tokenize_lines(['true'])))
+True
+>>> read_line('3')
+3
+>>> read_line('-123')
+-123
+>>> read_line('1.25')
+1.25
+>>> read_line('true')
+True
+>>> read_line('(a)')
+SyntaxError: unexpected token: )
+
+# Error: expected
+#     Pair('a', nil)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SyntaxError: unexpected token: )
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> scheme_read(Buffer(tokenize_lines(['nil'])))
+nil
+>>> scheme_read(Buffer(tokenize_lines(['1'])))
+1
+>>> scheme_read(Buffer(tokenize_lines(['true'])))
+True
+>>> read_line('3')
+3
+>>> read_line('-123')
+-123
+>>> read_line('1.25')
+1.25
+>>> read_line('true')
+True
+>>> read_line('(a)')
+SyntaxError: unexpected token: )
+
+# Error: expected
+#     Pair('a', nil)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SyntaxError: unexpected token: )
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> scheme_read(Buffer(tokenize_lines(['nil'])))
+nil
+>>> scheme_read(Buffer(tokenize_lines(['1'])))
+1
+>>> scheme_read(Buffer(tokenize_lines(['true'])))
+True
+>>> read_line('3')
+3
+>>> read_line('-123')
+-123
+>>> read_line('1.25')
+1.25
+>>> read_line('true')
+True
+>>> read_line('(a)')
+Traceback (most recent call last):
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 176, in read_line
+    return scheme_read(Buffer(tokenize_lines([line])))
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 119, in scheme_read
+    return read_tail(val)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 141, in read_tail
+    if src.current() is None:
+AttributeError: 'str' object has no attribute 'current'
+
+# Error: expected
+#     Pair('a', nil)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     AttributeError: 'str' object has no attribute 'current'
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 5
+
+>>> from scheme_reader import *
+>>> read_tail(Buffer(tokenize_lines(['(1 2 3)'])))
+Pair(Pair(1, Pair(2, Pair(3, nil))), nil)
+
+# Error: expected
+#     SyntaxError
+# but got
+#     Pair(Pair(1, Pair(2, Pair(3, nil))), nil)
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 5"
+---------------------------------------------------------------------
+Test summary
+    4 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> scheme_read(Buffer(tokenize_lines(['nil'])))
+nil
+>>> scheme_read(Buffer(tokenize_lines(['1'])))
+1
+>>> scheme_read(Buffer(tokenize_lines(['true'])))
+True
+>>> read_line('3')
+3
+>>> read_line('-123')
+-123
+>>> read_line('1.25')
+1.25
+>>> read_line('true')
+True
+>>> read_line('(a)')
+Pair(nil, nil)
+
+# Error: expected
+#     Pair('a', nil)
+# but got
+#     Pair(nil, nil)
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> scheme_read(Buffer(tokenize_lines(['nil'])))
+nil
+>>> scheme_read(Buffer(tokenize_lines(['1'])))
+1
+>>> scheme_read(Buffer(tokenize_lines(['true'])))
+True
+>>> read_line('3')
+3
+>>> read_line('-123')
+-123
+>>> read_line('1.25')
+1.25
+>>> read_line('true')
+True
+>>> read_line('(a)')
+SyntaxError: unexpected token: )
+
+# Error: expected
+#     Pair('a', nil)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SyntaxError: unexpected token: )
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 5
+
+>>> from scheme_reader import *
+>>> read_tail(Buffer(tokenize_lines(['(1 2 3)'])))
+Pair(Pair(1, Pair(2, Pair(3, nil))), nil)
+
+# Error: expected
+#     SyntaxError
+# but got
+#     Pair(Pair(1, Pair(2, Pair(3, nil))), nil)
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 5"
+---------------------------------------------------------------------
+Test summary
+    4 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 5
+
+>>> from scheme_reader import *
+>>> read_tail(Buffer(tokenize_lines(['(1 2 3)'])))
+Pair(Pair(1, Pair(2, Pair(3, nil))), nil)
+
+# Error: expected
+#     SyntaxError
+# but got
+#     Pair(Pair(1, Pair(2, Pair(3, nil))), nil)
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 5"
+---------------------------------------------------------------------
+Test summary
+    4 test cases passed before encountering first failed test case
+
+Backup... 0.0% complete
+
+Checking for software updates...
+Network error when checking for updates.
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 5
+
+>>> from scheme_reader import *
+>>> read_tail(Buffer(tokenize_lines(['(1 2 3)'])))
+Pair(Pair(1, Pair(2, Pair(3, nil))), nil)
+
+# Error: expected
+#     SyntaxError
+# but got
+#     Pair(Pair(1, Pair(2, Pair(3, nil))), nil)
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 5"
+---------------------------------------------------------------------
+Test summary
+    4 test cases passed before encountering first failed test case
+
+ERROR  | auth.py:91 | {'error': 'invalid_grant'}
+Performing authentication
+Please enter your bCourses email.
+bCourses email: fuyuwei@berkeley.edu
+Successfully logged in as fuyuwei@berkeley.edu
+Backup... 100% completee
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+Checking for software updates...
+OK is up to date
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "ok/__main__.py", line 46, in <module>
+  File "ok/client/cli/ok.py", line 188, in main
+  File "ok/client/api/assignment.py", line 24, in load_assignment
+  File "ok/client/sources/common/core.py", line 187, in __call__
+  File "ok/client/api/assignment.py", line 153, in post_instantiation
+  File "ok/client/api/assignment.py", line 202, in _load_tests
+  File "ok/client/sources/ok_test/__init__.py", line 51, in load
+  File "ok/client/sources/common/core.py", line 187, in __call__
+  File "ok/client/sources/ok_test/models.py", line 45, in post_instantiation
+  File "ok/client/sources/common/core.py", line 170, in __call__
+  File "ok/client/sources/ok_test/doctest.py", line 20, in __init__
+    Then running the module as a script will cause the examples in the
+  File "ok/client/sources/common/interpreter.py", line 156, in __init__
+  File "ok/client/sources/ok_test/scheme.py", line 35, in load
+    # END PROBLEM 5
+  File "ok/client/sources/ok_test/scheme.py", line 89, in _import_scheme
+    def make_child_frame(self, formals, vals):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 3, in <module>
+    from scheme_primitives import *
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_primitives.py", line 6, in <module>
+    from scheme_reader import Pair, nil, repl_str
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 152
+    if src.current() = '(':
+                     ^
+SyntaxError: invalid syntax
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 4
+
+>>> from scheme_reader import *
+>>> read_tail(Buffer(tokenize_lines([')'])))
+nil
+>>> read_tail(Buffer(tokenize_lines(['1 2 3)'])))
+Pair(1, Pair(2, Pair(3, nil)))
+>>> read_tail(Buffer(tokenize_lines(['2 (3 4))'])))
+SyntaxError: unexpected end of file
+
+# Error: expected
+#     Pair(2, Pair(Pair(3, Pair(4, nil)), nil))
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SyntaxError: unexpected end of file
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 4"
+---------------------------------------------------------------------
+Test summary
+    3 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    8 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 1 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> scheme_read(Buffer(tokenize_lines(['nil'])))
+nil
+>>> scheme_read(Buffer(tokenize_lines(['1'])))
+1
+>>> scheme_read(Buffer(tokenize_lines(['true'])))
+True
+>>> read_line('3')
+3
+>>> read_line('-123')
+-123
+>>> read_line('1.25')
+1.25
+>>> read_line('true')
+True
+>>> read_line('(a)')
+Traceback (most recent call last):
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 175, in read_line
+    return scheme_read(Buffer(tokenize_lines([line])))
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 117, in scheme_read
+    return read_tail(src)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 154, in read_tail
+    return Pair(fscheme_read(src), read_tail(src))
+NameError: name 'fscheme_read' is not defined
+
+# Error: expected
+#     Pair('a', nil)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     NameError: name 'fscheme_read' is not defined
+
+Run only this test case with "python3 ok -q 01 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 01 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    8 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ 

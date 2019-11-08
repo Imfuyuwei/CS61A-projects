@@ -1,0 +1,105 @@
+Last login: Sun Apr  8 18:40:10 on ttys000
+airbears2-10-142-151-141:~ fuyuwei$ cd downloads/cs61a/scheme
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok -q 11 -u
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Problem 11 > Suite 1 > Case 1
+(cases remaining: 6)
+
+>>> from scheme import *
+>>> global_frame = create_global_frame()
+>>> frame = global_frame.make_child_frame(Pair('a', Pair('b', Pair('c', nil))), Pair(1, Pair(2, Pair(3, nil))))
+>>> global_frame.lookup('a') # Type SchemeError if you think this errors
+? 1
+-- Not quite. Try again! --
+
+? SchemeError
+-- OK! --
+
+>>> frame.lookup('a') # Type SchemeError if you think this errors
+? 1
+-- OK! --
+
+>>> frame.lookup('b') # Type SchemeError if you think this errors
+? 2
+-- OK! --
+
+>>> frame.lookup('c') # Type SchemeError if you think this errors
+? 3
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 11 > Suite 1 > Case 2
+(cases remaining: 5)
+
+>>> from scheme import *
+>>> global_frame = create_global_frame()
+>>> frame = global_frame.make_child_frame(nil, nil)
+>>> frame.parent is global_frame
+? False
+-- Not quite. Try again! --
+
+? True
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 11 > Suite 1 > Case 3
+(cases remaining: 4)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 11 > Suite 2 > Case 1
+(cases remaining: 3)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 11 > Suite 2 > Case 2
+(cases remaining: 2)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 11 > Suite 2 > Case 3
+(cases remaining: 1)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+OK! All cases for Problem 11 unlocked.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok -q 11 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    6 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ 

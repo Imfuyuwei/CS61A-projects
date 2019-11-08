@@ -1,0 +1,553 @@
+Last login: Sun Apr  8 21:16:01 on ttys000
+airbears2-10-142-150-91:~ fuyuwei$ cd downloads/cs61a/scheme
+airbears2-10-142-150-91:scheme fuyuwei$ python3 ok -q 13 -u
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Problem 13 > Suite 1 > Case 1
+(cases remaining: 9)
+
+
+scm> (and)
+Choose the number of the correct choice:
+0) #t
+1) SchemeError
+2) #f
+? 0
+-- OK! --
+
+scm> (and 1 False)
+Choose the number of the correct choice:
+0) 1
+1) #f
+2) #t
+? 1
+-- OK! --
+
+scm> (and (+ 1 1) 1)
+? 1
+-- OK! --
+
+scm> (and False 5)
+? #f
+-- OK! --
+
+scm> (and 4 5 (+ 3 3))
+? 6
+-- OK! --
+
+scm> (and True False 42 (/ 1 0))
+? #f
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 13 > Suite 1 > Case 2
+(cases remaining: 8)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 13 > Suite 1 > Case 3
+(cases remaining: 7)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 13 > Suite 1 > Case 4
+(cases remaining: 6)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 13 > Suite 2 > Case 1
+(cases remaining: 5)
+
+
+scm> (or)
+? #f
+-- OK! --
+
+scm> (or (+ 1 1))
+? 2
+-- OK! --
+
+scm> (or False)
+? #f
+-- OK! --
+
+scm> (define (t) True)
+? (t)
+-- Not quite. Try again! --
+
+? t
+-- OK! --
+
+scm> (or (t) 3)
+? True
+-- Not quite. Try again! --
+
+? #t
+-- OK! --
+
+scm> (or 5 2 1)
+? 5
+-- OK! --
+
+scm> (or False (- 1 1) 1)
+? 0
+-- OK! --
+
+scm> (or 4 True (/ 1 0))
+? 4
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 13 > Suite 2 > Case 2
+(cases remaining: 4)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 13 > Suite 2 > Case 3
+(cases remaining: 3)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 13 > Suite 2 > Case 4
+(cases remaining: 2)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 13 > Suite 2 > Case 5
+(cases remaining: 1)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+OK! All cases for Problem 13 unlocked.
+
+ERROR  | auth.py:91 | {'error': 'invalid_grant'}
+Performing authentication
+Please enter your bCourses email.
+bCourses email: fuyuwei@berkeley.edu
+Successfully logged in as fuyuwei@berkeley.edu
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-91:scheme fuyuwei$ python3 ok -q 13 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 13 > Suite 1 > Case 1
+
+scm> (and)
+#t
+scm> (and 1 False)
+Traceback (most recent call last):
+k (most recent call last):
+  File "ok/client/sources/ok_test/scheme.py", line 58, in evaluate
+    (exp, self._frame))
+  File "ok/client/utils/timer.py", line 33, in timed
+    raise submission.error
+  File "ok/client/utils/timer.py", line 49, in run
+    self.result = self.fn(*self.args, **self.kargs)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 31, in scheme_eval
+    return SPECIAL_FORMS[first](rest, env)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 272, in do_and_form
+    return do_and_form(expressions.second)
+TypeError: do_and_form() missing 1 required positional argument: 'env'
+
+# Error: expected
+#     #f
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     TypeError: do_and_form() missing 1 required positional argument: 'env'
+
+Run only this test case with "python3 ok -q 13 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-91:scheme fuyuwei$ python3 ok -q 13 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 13 > Suite 1 > Case 1
+
+scm> (and)
+#t
+scm> (and 1 False)
+#f
+scm> (and (+ 1 1) 1)
+#t
+
+# Error: expected
+#     1
+# but got
+#     #t
+
+Run only this test case with "python3 ok -q 13 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-91:scheme fuyuwei$ python3 ok -q 13 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 13 > Suite 1 > Case 1
+
+scm> (and)
+#t
+scm> (and 1 False)
+#f
+scm> (and (+ 1 1) 1)
+#t
+
+# Error: expected
+#     1
+# but got
+#     #t
+
+Run only this test case with "python3 ok -q 13 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-91:scheme fuyuwei$ python3 ok -q 13 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 13 > Suite 1 > Case 1
+
+scm> (and)
+#t
+scm> (and 1 False)
+#f
+scm> (and (+ 1 1) 1)
+#t
+
+# Error: expected
+#     1
+# but got
+#     #t
+
+Run only this test case with "python3 ok -q 13 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-91:scheme fuyuwei$ python3 ok -q 13 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 13 > Suite 1 > Case 2
+
+scm> (and 3 2 False)
+#f
+scm> (and 3 2 1)
+1
+scm> (and 3 False 5)
+#f
+scm> (and 0 1 2 3)
+3
+scm> (define (true-fn) #t)
+true-fn
+scm> (and (true-fn))
+#t
+scm> (define x False)
+x
+scm> (and x True)
+#t
+
+# Error: expected
+#     #f
+# but got
+#     #t
+
+Run only this test case with "python3 ok -q 13 --suite 1 --case 2"
+---------------------------------------------------------------------
+Test summary
+    1 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-91:scheme fuyuwei$ python3 ok -q 13 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 13 > Suite 1 > Case 1
+
+scm> (and)
+#t
+scm> (and 1 False)
+#f
+scm> (and (+ 1 1) 1)
+#t
+
+# Error: expected
+#     1
+# but got
+#     #t
+
+Run only this test case with "python3 ok -q 13 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-91:scheme fuyuwei$ python3 -i scheme.py
+scm> (define x False)
+x
+scm> (and x True)
+#t
+scm> (exit)
+
+>>> exit()
+airbears2-10-142-150-91:scheme fuyuwei$ python3 -i scheme.py
+scm> ^D
+>>> ^D
+airbears2-10-142-150-91:scheme fuyuwei$ python3 ok -q 13 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 13 > Suite 1 > Case 3
+
+scm> (define x 0)
+x
+scm> (and (define x (+ x 1))
+....      (define x (+ x 10))
+....      (define x (+ x 100))
+....      (define x (+ x 1000)))
+x
+scm> x
+2111
+
+# Error: expected
+#     1111
+# but got
+#     2111
+
+Run only this test case with "python3 ok -q 13 --suite 1 --case 3"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-91:scheme fuyuwei$ python3 
+Python 3.6.4 (v3.6.4:d48ecebad5, Dec 18 2017, 21:07:28) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a = [1, 2, 3]
+>>> b = reverse(a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'reverse' is not defined
+>>> b = reversed(a)
+>>> b
+<list_reverseiterator object at 0x10219ea58>
+>>> list(b)
+[3, 2, 1]
+>>> bcd = ['b', 'c', 'd']
+>>> caps = map(lambda x: x.upper(), bcd)
+>>> caps
+<map object at 0x10219ebe0>
+>>> list(caps)
+['B', 'C', 'D']
+>>> next(caps)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+>>> caps = map(lambda x: x.upper(), bcd)
+>>> next(caps)
+'B'
+>>> list(caps)
+['C', 'D']
+>>> s = range(3, 7)
+>>> s
+range(3, 7)
+>>> list(s)
+[3, 4, 5, 6]
+>>> d = {'a': 1, 'b': 2, 'c': 3}
+>>> items = zip(d.keys(), d.values())
+>>> items
+<zip object at 0x1021a69c8>
+>>> list(items)
+[('a', 1), ('b', 2), ('c', 3)]
+>>> exit()
+airbears2-10-142-150-91:scheme fuyuwei$ python3 ok -q 13 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 13 > Suite 2 > Case 1
+
+scm> (or)
+#f
+scm> (or (+ 1 1))
+2
+scm> (or False)
+#t
+
+# Error: expected
+#     #f
+# but got
+#     #t
+
+Run only this test case with "python3 ok -q 13 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    4 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-91:scheme fuyuwei$ python3 ok -q 13 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 13 > Suite 2 > Case 1
+
+scm> (or)
+#f
+scm> (or (+ 1 1))
+2
+scm> (or False)
+# Error: too few operands in form
+
+# Error: expected
+#     #f
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: too few operands in form
+
+Run only this test case with "python3 ok -q 13 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    4 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-91:scheme fuyuwei$ python3 ok -q 13 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    9 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-150-91:scheme fuyuwei$ 

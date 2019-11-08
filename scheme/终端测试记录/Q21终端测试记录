@@ -1,0 +1,1367 @@
+Last login: Fri Apr 13 16:30:51 on ttys000
+fuyuweideAir:~ fuyuwei$ cd downloads/cs61a/scheme
+fuyuweideAir:scheme fuyuwei$ python3 ok --submit
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+
+# Error: expected
+#     for
+# but got
+
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    109 test cases passed before encountering first failed test case
+
+Submit... 100% complete
+Submission successful for user: fuyuwei@berkeley.edu
+URL: https://okpy.org/cal/cs61a/sp18/proj04/submissions/y8335E
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok --submit
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+# Error: unknown identifier: i
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: unknown identifier: i
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    109 test cases passed before encountering first failed test case
+
+Submit... 100% complete
+Submission successful for user: fuyuwei@berkeley.edu
+URL: https://okpy.org/cal/cs61a/sp18/proj04/submissions/GZllxL
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 o-q 21
+/Library/Frameworks/Python.framework/Versions/3.6/Resources/Python.app/Contents/MacOS/Python: can't open file 'o-q': [Errno 2] No such file or directory
+fuyuweideAir:scheme fuyuwei$ python3 -q 21
+/Library/Frameworks/Python.framework/Versions/3.6/Resources/Python.app/Contents/MacOS/Python: can't open file '21': [Errno 2] No such file or directory
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+# Error: unknown identifier: i
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: unknown identifier: i
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 20
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    8 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 20
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    8 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+(map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     (map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+(map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     (map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 20
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    8 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+(map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     (map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 -i scheme.py
+scm> (map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+(0 2 3)
+scm> (exit)
+
+>>> exit()
+fuyuweideAir:scheme fuyuwei$ python3 -i scheme.py
+scm> (exit)
+
+>>> exit()
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+(map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     (map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+(map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     (map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+# Error: unknown identifier: i
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: unknown identifier: i
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+(map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     (map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 -i scheme
+/Library/Frameworks/Python.framework/Versions/3.6/Resources/Python.app/Contents/MacOS/Python: can't open file 'scheme': [Errno 2] No such file or directory
+fuyuweideAir:scheme fuyuwei$ python3 -i schem.py
+/Library/Frameworks/Python.framework/Versions/3.6/Resources/Python.app/Contents/MacOS/Python: can't open file 'schem.py': [Errno 2] No such file or directory
+fuyuweideAir:scheme fuyuwei$ python3 -i scheme.py
+scm> (define (f x) (+ 3 x))
+f
+scm> (map f (quote (1 2 3)))
+(4 5 6)
+scm> (exit)
+
+>>> exit()
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 20
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    8 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+(map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     (map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+# Error: evaluation exceeded 10 seconds.
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     Timeout: 
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 -i scheme.py
+scm> (define f (lambda (x) (+ 1 2)))
+f
+scm> (f 1)
+3
+scm> (exit)
+
+>>> exit()
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 20
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    8 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+# Error: evaluation exceeded 10 seconds.
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     Timeout: 
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+(map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     (map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok --submit
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 20 (EC) > Suite 1 > Case 1
+
+scm> (define (sum n total)
+....   (if (zero? n)
+....       total
+....       (sum (- n 1) (+ n total))))
+sum
+scm> (sum 1001 0)
+Traceback (most recent call last):
+  ...
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 509, in complete_apply
+    val = scheme_apply(procedure, args, env)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 49, in scheme_apply
+    return procedure.apply(args, env)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 162, in apply
+    return self.fn(*python_args)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_primitives.py", line 190, in scheme_add
+    return _arith(operator.add, 0, vals)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_primitives.py", line 180, in _arith
+    _check_nums(*vals)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_primitives.py", line 173, in _check_nums
+    if not scheme_numberp(v):
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_primitives.py", line 164, in scheme_numberp
+    return isinstance(x, (int, float)) and not scheme_booleanp(x)
+RecursionError: maximum recursion depth exceeded in __instancecheck__
+
+# Error: expected
+#     501501
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     RecursionError: maximum recursion depth exceeded in __instancecheck__
+
+Run only this test case with "python3 ok -q 20 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    101 test cases passed before encountering first failed test case
+
+Submit... 100% complete
+Submission successful for user: fuyuwei@berkeley.edu
+URL: https://okpy.org/cal/cs61a/sp18/proj04/submissions/vg3Vg5
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok --submit
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+(map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     (map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    109 test cases passed before encountering first failed test case
+
+Submit... 100% complete
+Submission successful for user: fuyuwei@berkeley.edu
+URL: https://okpy.org/cal/cs61a/sp18/proj04/submissions/GZl4ZJ
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+<scheme.Thunk object at 0x103bbff60>
+
+# Error: expected
+#     for
+# but got
+#     <scheme.Thunk object at 0x103bbff60>
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+(lambda (formal iterable body) (list (quote map) (list (quote lambda) (list formal) body) iterable))
+
+# Error: expected
+#     for
+# but got
+#     (lambda (formal iterable body) (list (quote map) (list (quote lambda) (list formal) body) iterable))
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+Traceback (most recent call last):
+k (most recent call last):
+  File "ok/client/sources/ok_test/scheme.py", line 58, in evaluate
+    (exp, self._frame))
+  File "ok/client/utils/timer.py", line 33, in timed
+    raise submission.error
+  File "ok/client/utils/timer.py", line 49, in run
+    self.result = self.fn(*self.args, **self.kargs)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 543, in optimized_eval
+    result = procedure.apply_macro(args, env)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 198, in apply_macro
+    return complete_apply(self, operands, env)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 509, in complete_apply
+    val = scheme_apply(procedure, args, env)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 51, in scheme_apply
+    new_env = procedure.make_call_frame(args, env)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 182, in make_call_frame
+    return self.env.make_child_frame(self.formals, args)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 114, in make_child_frame
+    child.define(formals.first, vals.first)
+AttributeError: 'str' object has no attribute 'first'
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     AttributeError: 'str' object has no attribute 'first'
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+(map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     (map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+(map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     (map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+(map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     (map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+# Error: unknown identifier: i
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: unknown identifier: i
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+(map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     (map (lambda (i) (if (= i 1) 0 i)) (quote (1 2 3)))
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+# Error: unknown identifier: i
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: unknown identifier: i
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 21 (EC) > Suite 1 > Case 1
+
+scm> (define (map f lst)
+....         (if (null? lst)
+....             nil
+....             (cons (f (car lst)) (map f (cdr lst)))))
+scm> (define-macro (for formal iterable body)
+....               (list 'map (list 'lambda (list formal) body) iterable))
+for
+scm> (for i '(1 2 3)
+....      (if (= i 1)
+....          0
+....          i))
+# Error: unknown identifier: i
+
+# Error: expected
+#     (0 2 3)
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: unknown identifier: i
+
+Run only this test case with "python3 ok -q 21 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    3 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 21
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    3 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok --submit
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Scheme tests in tests.scm
+
+20 passed; 0 failed
+-- OK! --
+
+---------------------------------------------------------------------
+Test summary
+    132 test cases passed! No cases failed.
+
+Submit... 100% complete
+Submission successful for user: fuyuwei@berkeley.edu
+URL: https://okpy.org/cal/cs61a/sp18/proj04/submissions/k53EBx
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok --submit
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Scheme tests in tests.scm
+
+20 passed; 0 failed
+-- OK! --
+
+---------------------------------------------------------------------
+Test summary
+    132 test cases passed! No cases failed.
+
+Submit... 100% complete
+Submission successful for user: fuyuwei@berkeley.edu
+URL: https://okpy.org/cal/cs61a/sp18/proj04/submissions/mw3J8p
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok --submit
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Scheme tests in tests.scm
+
+20 passed; 0 failed
+-- OK! --
+
+---------------------------------------------------------------------
+Test summary
+    132 test cases passed! No cases failed.
+
+Submit... 100% complete
+Submission successful for user: fuyuwei@berkeley.edu
+URL: https://okpy.org/cal/cs61a/sp18/proj04/submissions/oY5L8z
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok --submit
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Scheme tests in tests.scm
+
+20 passed; 0 failed
+-- OK! --
+
+---------------------------------------------------------------------
+Test summary
+    132 test cases passed! No cases failed.
+
+Submit... 100% complete
+Submission successful for user: fuyuwei@berkeley.edu
+URL: https://okpy.org/cal/cs61a/sp18/proj04/submissions/pg3MB1
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok --submit
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Scheme tests in tests.scm
+
+20 passed; 0 failed
+-- OK! --
+
+---------------------------------------------------------------------
+Test summary
+    132 test cases passed! No cases failed.
+
+Submit... 100% complete
+Submission successful for user: fuyuwei@berkeley.edu
+URL: https://okpy.org/cal/cs61a/sp18/proj04/submissions/BgW4Ox
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ 

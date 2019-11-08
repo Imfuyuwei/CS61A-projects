@@ -1,0 +1,69 @@
+Last login: Sun Apr  8 12:55:47 on ttys000
+airbears2-10-142-151-141:~ fuyuwei$ cd downloads/cs61a/scheme
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok -q 09 -u
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Problem 9 > Suite 1 > Case 1
+(cases remaining: 4)
+
+
+scm> (lambda (x y) (+ x y))
+? (lambda (x y) (+ x y))
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 9 > Suite 1 > Case 2
+(cases remaining: 3)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 9 > Suite 1 > Case 3
+(cases remaining: 2)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 9 > Suite 2 > Case 1
+(cases remaining: 1)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+OK! All cases for Problem 9 unlocked.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ open scheme.py
+airbears2-10-142-151-141:scheme fuyuwei$ python3 ok -q 09 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    4 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-151-141:scheme fuyuwei$ 

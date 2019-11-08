@@ -1,0 +1,103 @@
+Last login: Sat Apr  7 17:30:34 on ttys000
+fuyuweideMacBook-Air:~ fuyuwei$ cd downloads/cs61a/scheme
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 03 -u
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Problem 3 > Suite 1 > Case 1
+(cases remaining: 5)
+
+>>> from scheme import *
+>>> global_frame = create_global_frame()
+>>> global_frame.define("x", 3)
+>>> global_frame.parent is None
+? True
+-- OK! --
+
+>>> global_frame.lookup("x")
+? 3
+-- OK! --
+
+>>> global_frame.define("x", 2)
+>>> global_frame.lookup("x")
+? 2
+-- OK! --
+
+>>> global_frame.lookup("foo")
+Choose the number of the correct choice:
+0) SchemeError
+1) None
+2) 3
+? 0
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 3 > Suite 1 > Case 2
+(cases remaining: 4)
+
+>>> from scheme import *
+>>> first_frame = create_global_frame()
+>>> first_frame.define("x", 3)
+>>> second_frame = Frame(first_frame)
+>>> second_frame.parent == first_frame
+? True
+-- OK! --
+
+>>> second_frame.lookup("x")
+? 3
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 3 > Suite 1 > Case 3
+(cases remaining: 3)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 3 > Suite 1 > Case 4
+(cases remaining: 2)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 3 > Suite 2 > Case 1
+(cases remaining: 1)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+OK! All cases for Problem 3 unlocked.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 03 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    5 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ 

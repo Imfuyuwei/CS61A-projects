@@ -1,0 +1,275 @@
+Last login: Thu Aug  9 14:09:27 on ttys000
+ucbvpn-209-163:~ fuyuwei$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+==> This script will install:
+/usr/local/bin/brew
+/usr/local/share/doc/homebrew
+/usr/local/share/man/man1/brew.1
+/usr/local/share/zsh/site-functions/_brew
+/usr/local/etc/bash_completion.d/brew
+/usr/local/Homebrew
+==> The following existing directories will be made group writable:
+/usr/local/bin
+/usr/local/share
+==> The following existing directories will have their owner set to fuyuwei:
+/usr/local/bin
+/usr/local/share
+==> The following existing directories will have their group set to admin:
+/usr/local/bin
+/usr/local/share
+==> The following new directories will be created:
+/usr/local/Cellar
+/usr/local/Homebrew
+/usr/local/Frameworks
+/usr/local/etc
+/usr/local/include
+/usr/local/lib
+/usr/local/opt
+/usr/local/sbin
+/usr/local/share/zsh
+/usr/local/share/zsh/site-functions
+/usr/local/var
+==> The Xcode Command Line Tools will be installed.
+
+Press RETURN to continue or any other key to abort
+==> /usr/bin/sudo /bin/chmod u+rwx /usr/local/bin /usr/local/share
+Password:
+==> /usr/bin/sudo /bin/chmod g+rwx /usr/local/bin /usr/local/share
+==> /usr/bin/sudo /usr/sbin/chown fuyuwei /usr/local/bin /usr/local/share
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/bin /usr/local/share
+==> /usr/bin/sudo /bin/mkdir -p /usr/local/Cellar /usr/local/Homebrew /usr/local/Frameworks /usr/local/etc /usr/local/include /usr/local/lib /usr/local/opt /usr/local/sbin /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var
+==> /usr/bin/sudo /bin/chmod g+rwx /usr/local/Cellar /usr/local/Homebrew /usr/local/Frameworks /usr/local/etc /usr/local/include /usr/local/lib /usr/local/opt /usr/local/sbin /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var
+==> /usr/bin/sudo /bin/chmod 755 /usr/local/share/zsh /usr/local/share/zsh/site-functions
+==> /usr/bin/sudo /usr/sbin/chown fuyuwei /usr/local/Cellar /usr/local/Homebrew /usr/local/Frameworks /usr/local/etc /usr/local/include /usr/local/lib /usr/local/opt /usr/local/sbin /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/Cellar /usr/local/Homebrew /usr/local/Frameworks /usr/local/etc /usr/local/include /usr/local/lib /usr/local/opt /usr/local/sbin /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var
+==> /usr/bin/sudo /bin/mkdir -p /Users/fuyuwei/Library/Caches/Homebrew
+==> /usr/bin/sudo /bin/chmod g+rwx /Users/fuyuwei/Library/Caches/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown fuyuwei /Users/fuyuwei/Library/Caches/Homebrew
+==> /usr/bin/sudo /bin/mkdir -p /Library/Caches/Homebrew
+==> /usr/bin/sudo /bin/chmod g+rwx /Library/Caches/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown fuyuwei /Library/Caches/Homebrew
+==> Searching online for the Command Line Tools
+==> /usr/bin/sudo /usr/bin/touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+brew doctor
+
+brew cask install==> Installing Command Line Tools (macOS Sierra version 10.12) for Xcode-9.2
+==> /usr/bin/sudo /usr/sbin/softwareupdate -i Command\ Line\ Tools\ (macOS\ Sierra\ version\ 10.12)\ for\ Xcode-9.2
+Software Update Tool
+Copyright 2002-2015 Apple Inc.
+
+
+Downloading Command Line Tools (macOS Sierra version 10.12) for Xcode
+Downloaded Command Line Tools (macOS Sierra version 10.12) for Xcode
+Installing Command Line Tools (macOS Sierra version 10.12) for Xcode
+Done with Command Line Tools (macOS Sierra version 10.12) for Xcode
+Done.
+==> /usr/bin/sudo /bin/rm -f /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+sudo: 3 incorrect password attempts
+Failed during: /usr/bin/sudo /bin/rm -f /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+ucbvpn-209-163:~ fuyuwei$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+==> This script will install:
+/usr/local/bin/brew
+/usr/local/share/doc/homebrew
+/usr/local/share/man/man1/brew.1
+/usr/local/share/zsh/site-functions/_brew
+/usr/local/etc/bash_completion.d/brew
+/usr/local/Homebrew
+
+Press RETURN to continue or any other key to abort
+==> Downloading and installing Homebrew...
+remote: Counting objects: 107254, done.
+remote: Total 107254 (delta 0), reused 0 (delta 0), pack-reused 107253
+Receiving objects: 100% (107254/107254), 24.34 MiB | 284.00 KiB/s, done.
+Resolving deltas: 100% (78407/78407), done.
+From https://github.com/Homebrew/brew
+ * [new branch]          master     -> origin/master
+ * [new tag]             0.1        -> 0.1
+ * [new tag]             0.2        -> 0.2
+ * [new tag]             0.3        -> 0.3
+ * [new tag]             0.4        -> 0.4
+ * [new tag]             0.5        -> 0.5
+ * [new tag]             0.6        -> 0.6
+ * [new tag]             0.7        -> 0.7
+ * [new tag]             0.7.1      -> 0.7.1
+ * [new tag]             0.8        -> 0.8
+ * [new tag]             0.8.1      -> 0.8.1
+ * [new tag]             0.9        -> 0.9
+ * [new tag]             0.9.1      -> 0.9.1
+ * [new tag]             0.9.2      -> 0.9.2
+ * [new tag]             0.9.3      -> 0.9.3
+ * [new tag]             0.9.4      -> 0.9.4
+ * [new tag]             0.9.5      -> 0.9.5
+ * [new tag]             0.9.8      -> 0.9.8
+ * [new tag]             0.9.9      -> 0.9.9
+ * [new tag]             1.0.0      -> 1.0.0
+ * [new tag]             1.0.1      -> 1.0.1
+ * [new tag]             1.0.2      -> 1.0.2
+ * [new tag]             1.0.3      -> 1.0.3
+ * [new tag]             1.0.4      -> 1.0.4
+ * [new tag]             1.0.5      -> 1.0.5
+ * [new tag]             1.0.6      -> 1.0.6
+ * [new tag]             1.0.7      -> 1.0.7
+ * [new tag]             1.0.8      -> 1.0.8
+ * [new tag]             1.0.9      -> 1.0.9
+ * [new tag]             1.1.0      -> 1.1.0
+ * [new tag]             1.1.1      -> 1.1.1
+ * [new tag]             1.1.10     -> 1.1.10
+ * [new tag]             1.1.11     -> 1.1.11
+ * [new tag]             1.1.12     -> 1.1.12
+ * [new tag]             1.1.13     -> 1.1.13
+ * [new tag]             1.1.2      -> 1.1.2
+ * [new tag]             1.1.3      -> 1.1.3
+ * [new tag]             1.1.4      -> 1.1.4
+ * [new tag]             1.1.5      -> 1.1.5
+ * [new tag]             1.1.6      -> 1.1.6
+ * [new tag]             1.1.7      -> 1.1.7
+ * [new tag]             1.1.8      -> 1.1.8
+ * [new tag]             1.1.9      -> 1.1.9
+ * [new tag]             1.2.0      -> 1.2.0
+ * [new tag]             1.2.1      -> 1.2.1
+ * [new tag]             1.2.2      -> 1.2.2
+ * [new tag]             1.2.3      -> 1.2.3
+ * [new tag]             1.2.4      -> 1.2.4
+ * [new tag]             1.2.5      -> 1.2.5
+ * [new tag]             1.2.6      -> 1.2.6
+ * [new tag]             1.3.0      -> 1.3.0
+ * [new tag]             1.3.1      -> 1.3.1
+ * [new tag]             1.3.2      -> 1.3.2
+ * [new tag]             1.3.3      -> 1.3.3
+ * [new tag]             1.3.4      -> 1.3.4
+ * [new tag]             1.3.5      -> 1.3.5
+ * [new tag]             1.3.6      -> 1.3.6
+ * [new tag]             1.3.7      -> 1.3.7
+ * [new tag]             1.3.8      -> 1.3.8
+ * [new tag]             1.3.9      -> 1.3.9
+ * [new tag]             1.4.0      -> 1.4.0
+ * [new tag]             1.4.1      -> 1.4.1
+ * [new tag]             1.4.2      -> 1.4.2
+ * [new tag]             1.4.3      -> 1.4.3
+ * [new tag]             1.5.0      -> 1.5.0
+ * [new tag]             1.5.1      -> 1.5.1
+ * [new tag]             1.5.10     -> 1.5.10
+ * [new tag]             1.5.11     -> 1.5.11
+ * [new tag]             1.5.12     -> 1.5.12
+ * [new tag]             1.5.13     -> 1.5.13
+ * [new tag]             1.5.14     -> 1.5.14
+ * [new tag]             1.5.2      -> 1.5.2
+ * [new tag]             1.5.3      -> 1.5.3
+ * [new tag]             1.5.4      -> 1.5.4
+ * [new tag]             1.5.5      -> 1.5.5
+ * [new tag]             1.5.6      -> 1.5.6
+ * [new tag]             1.5.7      -> 1.5.7
+ * [new tag]             1.5.8      -> 1.5.8
+ * [new tag]             1.5.9      -> 1.5.9
+ * [new tag]             1.6.0      -> 1.6.0
+ * [new tag]             1.6.1      -> 1.6.1
+ * [new tag]             1.6.10     -> 1.6.10
+ * [new tag]             1.6.11     -> 1.6.11
+ * [new tag]             1.6.12     -> 1.6.12
+ * [new tag]             1.6.13     -> 1.6.13
+ * [new tag]             1.6.14     -> 1.6.14
+ * [new tag]             1.6.15     -> 1.6.15
+ * [new tag]             1.6.16     -> 1.6.16
+ * [new tag]             1.6.17     -> 1.6.17
+ * [new tag]             1.6.2      -> 1.6.2
+ * [new tag]             1.6.3      -> 1.6.3
+ * [new tag]             1.6.4      -> 1.6.4
+ * [new tag]             1.6.5      -> 1.6.5
+ * [new tag]             1.6.6      -> 1.6.6
+ * [new tag]             1.6.7      -> 1.6.7
+ * [new tag]             1.6.8      -> 1.6.8
+ * [new tag]             1.6.9      -> 1.6.9
+ * [new tag]             1.7.0      -> 1.7.0
+ * [new tag]             1.7.1      -> 1.7.1
+HEAD is now at 5198ad427 Merge pull request #4647 from reitermarkus/per-cask/formula-ds_store-cleanup
+==> Downloading https://homebrew.bintray.com/bottles-portable-ruby/portable-ruby-2.3.7.leopard_64.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring portable-ruby-2.3.7.leopard_64.bottle.tar.gz
+==> Tapping homebrew/core
+Cloning into '/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core'...
+remote: Counting objects: 4821, done.
+remote: Compressing objects: 100% (4615/4615), done.
+remote: Total 4821 (delta 57), reused 595 (delta 15), pack-reused 0
+Receiving objects: 100% (4821/4821), 3.91 MiB | 341.00 KiB/s, done.
+Resolving deltas: 100% (57/57), done.
+Tapped 2 commands and 4606 formulae (4,863 files, 12.3MB).
+==> Cleaning up /Library/Caches/Homebrew...
+==> Migrating /Library/Caches/Homebrew to /Users/fuyuwei/Library/Caches/Homebrew
+==> Deleting /Library/Caches/Homebrew...
+Already up-to-date.
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate user behaviour analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics.html
+
+==> Next steps:
+- Run `brew help` to get started
+- Further documentation: 
+    https://docs.brew.sh
+ucbvpn-209-163:~ fuyuwei$ brew cask install java
+==> Tapping homebrew/cask
+Cloning into '/usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask'...
+remote: Counting objects: 4120, done.
+remote: Compressing objects: 100% (4106/4106), done.
+remote: Total 4120 (delta 26), reused 616 (delta 11), pack-reused 0
+Receiving objects: 100% (4120/4120), 1.29 MiB | 167.00 KiB/s, done.
+Resolving deltas: 100% (26/26), done.
+Tapped 1 command and 4022 casks (4,129 files, 4.1MB).
+==> Caveats
+This Cask makes minor modifications to the JRE to prevent issues with
+packaged applications, as discussed here:
+
+  https://bugs.eclipse.org/bugs/show_bug.cgi?id=411361
+
+If your Java application still asks for JRE installation, you might need
+to reboot or logout/login.
+
+Installing java means you have AGREED to the license at
+  https://www.oracle.com/technetwork/java/javase/terms/license/index.html
+
+==> Satisfying dependencies
+==> Downloading http://download.oracle.com/otn-pub/java/jdk/10.0.2+13/19aef61b38
+######################################################################## 100.0%
+==> Verifying checksum for Cask java
+==> Installing Cask java
+==> Creating Caskroom at /usr/local/Caskroom
+==> We'll set permissions properly so we won't need sudo in the future.
+Password:
+==> Running installer for java; your password may be necessary.
+==> Package installers may write to any location; options such as --appdir are i
+installer: Package name is JDK 10.0.2
+installer: Installing at base path /
+installer: The install was successful.
+🍺  java was successfully installed!
+ucbvpn-209-163:~ fuyuwei$ brew install git
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+cmake
+
+==> Downloading https://homebrew.bintray.com/bottles/git-2.18.0.sierra.bottle.ta
+######################################################################## 100.0%
+==> Pouring git-2.18.0.sierra.bottle.tar.gz
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+zsh completions and functions have been installed to:
+  /usr/local/share/zsh/site-functions
+
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/git
+==> Summary
+🍺  /usr/local/Cellar/git/2.18.0: 1,488 files, 296.8MB
+ucbvpn-209-163:~ fuyuwei$ xcode-select --install
+xcode-select: error: command line tools are already installed, use "Software Update" to install updates
+ucbvpn-209-163:~ fuyuwei$ brew install git
+Warning: git 2.18.0 is already installed and up-to-date
+To reinstall 2.18.0, run `brew reinstall git`
+ucbvpn-209-163:~ fuyuwei$ 

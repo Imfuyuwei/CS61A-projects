@@ -1,0 +1,794 @@
+Last login: Sat Apr  7 19:04:58 on ttys000
+fuyuweideAir:~ fuyuwei$ cd downloads/cs61a/scheme
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 -u
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Problem 6 > Suite 1 > Case 1
+(cases remaining: 6)
+
+Q: What is the structure of the expressions argument to do_define_form?
+Choose the number of the correct choice:
+0) Pair('define', Pair(A, Pair(B, nil))), where:
+       A is the symbol being bound,
+       B is an expression whose value should be bound to A
+1) Pair(A, B), where:
+       A is the symbol being bound,
+       B is the value that should be bound to A
+2) Pair(A, B), where:
+       A is the symbol being bound,
+       B is an expression whose value should be bound to A
+3) Pair(A, Pair(B, nil)), where:
+       A is the symbol being bound,
+       B is the value that should be bound to A
+4) Pair(A, Pair(B, nil)), where:
+       A is the symbol being bound,
+       B is an expression whose value should be bound to A
+? 0
+-- Not quite. Try again! --
+
+Choose the number of the correct choice:
+0) Pair('define', Pair(A, Pair(B, nil))), where:
+       A is the symbol being bound,
+       B is an expression whose value should be bound to A
+1) Pair(A, B), where:
+       A is the symbol being bound,
+       B is the value that should be bound to A
+2) Pair(A, B), where:
+       A is the symbol being bound,
+       B is an expression whose value should be bound to A
+3) Pair(A, Pair(B, nil)), where:
+       A is the symbol being bound,
+       B is the value that should be bound to A
+4) Pair(A, Pair(B, nil)), where:
+       A is the symbol being bound,
+       B is an expression whose value should be bound to A
+? 4
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 6 > Suite 1 > Case 2
+(cases remaining: 5)
+
+Q: What method of a Frame instance will bind
+a value to a symbol in that frame?
+Choose the number of the correct choice:
+0) make_child_frame
+1) define
+2) bindings
+3) lookup
+? 1
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+(cases remaining: 4)
+
+
+scm> (define size 2)
+? size
+-- OK! --
+
+scm> size
+? 2
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 2
+(cases remaining: 3)
+
+
+scm> (define x (+ 2 3))
+? x
+-- OK! --
+
+scm> x
+? 5
+-- OK! --
+
+scm> (define x (+ 2 7))
+? x
+-- OK! --
+
+scm> x
+? 9
+-- OK! --
+
+scm> (eval (define tau 6.28))
+? 6.28
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 3
+(cases remaining: 2)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 4
+(cases remaining: 1)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+OK! All cases for Problem 6 unlocked.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (define size 2)
+Traceback (most recent call last):
+k (most recent call last):
+  File "ok/client/sources/ok_test/scheme.py", line 58, in evaluate
+    (exp, self._frame))
+  File "ok/client/utils/timer.py", line 33, in timed
+    raise submission.error
+  File "ok/client/utils/timer.py", line 49, in run
+    self.result = self.fn(*self.args, **self.kargs)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 31, in scheme_eval
+    return SPECIAL_FORMS[first](rest, env)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 213, in do_define_form
+    target = scheme_eval(expressions.second)
+TypeError: scheme_eval() missing 1 required positional argument: 'env'
+
+# Error: expected
+#     size
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     TypeError: scheme_eval() missing 1 required positional argument: 'env'
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (define size 2)
+# Error: int is not callable: 2
+
+# Error: expected
+#     size
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: int is not callable: 2
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (define size 2)
+# Error: int is not callable: 2
+
+# Error: expected
+#     size
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: int is not callable: 2
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (define size 2)
+# Error: int is not callable: 2
+
+# Error: expected
+#     size
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: int is not callable: 2
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (define size 2)
+# Error: int is not callable: 2
+
+# Error: expected
+#     size
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: int is not callable: 2
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (define size 2)
+size
+scm> size
+# Error: unknown identifier: size
+
+# Error: expected
+#     2
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: unknown identifier: size
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (define size 2)
+size
+scm> size
+(2)
+
+# Error: expected
+#     2
+# but got
+#     (2)
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (define size 2)
+# Error: int is not callable: 2
+
+# Error: expected
+#     size
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: int is not callable: 2
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 -v
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 1 > Case 1
+
+Q: What is the structure of the expressions argument to do_define_form?
+A: Pair(A, Pair(B, nil)), where: A is the symbol being bound, B is an expression whose value should be bound to A
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 6 > Suite 1 > Case 2
+
+Q: What method of a Frame instance will bind
+a value to a symbol in that frame?
+A: define
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (define size 2)
+# Error: int is not callable: 2
+
+# Error: expected
+#     size
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: int is not callable: 2
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 2
+
+scm> (define x (+ 2 3))
+# Error: int is not callable: 5
+
+# Error: expected
+#     x
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: int is not callable: 5
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 2"
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 3
+
+scm> (define pi 3.14159)
+# Error: float is not callable: 3.14159
+
+# Error: expected
+#     pi
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: float is not callable: 3.14159
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 3"
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 4
+
+scm> (define 0 1)
+# Error: non-symbol: 0
+scm> (define error (/ 1 0))
+# Error: division by zero
+-- OK! --
+
+---------------------------------------------------------------------
+Test summary
+    Passed: 3
+    Failed: 3
+[oooook.....] 50.0% passed
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (define size 2)
+# Error: int is not callable: 2
+
+# Error: expected
+#     size
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: int is not callable: 2
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (define size 2)
+size
+# Error: int is not callable: 2
+
+# Error: expected
+#     size
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: int is not callable: 2
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (define size 2)
+size
+size
+
+# Error: expected
+#     size
+# but got
+#     size
+#     size
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (define size 2)
+size
+scm> size
+(2)
+
+# Error: expected
+#     2
+# but got
+#     (2)
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (define size 2)
+# Error: int is not callable: 2
+
+# Error: expected
+#     size
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: int is not callable: 2
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (define size 2)
+# Error: unknown identifier: size
+
+# Error: expected
+#     size
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: unknown identifier: size
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 -i scheme.py
+scm> (define s 2)
+Error: unknown identifier: s
+scm> (exit)
+
+>>> s
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 's' is not defined
+>>> exit()
+fuyuweideAir:scheme fuyuwei$ python3 -i scheme.py
+scm> (define s 2)
+s
+scm> s
+(2)
+scm> 
+KeyboardInterrupt
+scm> ^D
+>>> exit()
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 1
+
+scm> (define size 2)
+Traceback (most recent call last):
+k (most recent call last):
+  File "ok/client/sources/ok_test/scheme.py", line 58, in evaluate
+    (exp, self._frame))
+  File "ok/client/utils/timer.py", line 33, in timed
+    raise submission.error
+  File "ok/client/utils/timer.py", line 49, in run
+    self.result = self.fn(*self.args, **self.kargs)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 31, in scheme_eval
+    return SPECIAL_FORMS[first](rest, env)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 214, in do_define_form
+    env.define(target, scheme_read(expressions.second))
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 108, in scheme_read
+    if src.current() is None:
+AttributeError: 'Pair' object has no attribute 'current'
+
+# Error: expected
+#     size
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     AttributeError: 'Pair' object has no attribute 'current'
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 1"
+---------------------------------------------------------------------
+Test summary
+    2 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 6 > Suite 2 > Case 2
+
+scm> (define x (+ 2 3))
+x
+scm> x
+(+ 2 3)
+
+# Error: expected
+#     5
+# but got
+#     (+ 2 3)
+
+Run only this test case with "python3 ok -q 06 --suite 2 --case 2"
+---------------------------------------------------------------------
+Test summary
+    3 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ python3 ok -q 06 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    6 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideAir:scheme fuyuwei$ 

@@ -1,0 +1,368 @@
+Last login: Wed Apr  4 21:13:17 on ttys000
+airbears2-10-142-148-140:~ fuyuwei$ cd downloads
+airbears2-10-142-148-140:downloads fuyuwei$ cd cs61a
+airbears2-10-142-148-140:cs61a fuyuwei$ cd scheme
+airbears2-10-142-148-140:scheme fuyuwei$ python3 ok -q 02 -u
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Problem 2 > Suite 1 > Case 1
+(cases remaining: 8)
+
+>>> from scheme_reader import *
+>>> read_line("(a . b)")
+Choose the number of the correct choice:
+0) SyntaxError
+1) Pair('a', Pair('b'))
+2) Pair('a', 'b')
+3) Pair('a', Pair('b', nil))
+4) Pair('a', 'b', nil)
+? 1
+-- Not quite. Try again! --
+
+Choose the number of the correct choice:
+0) SyntaxError
+1) Pair('a', Pair('b'))
+2) Pair('a', 'b')
+3) Pair('a', Pair('b', nil))
+4) Pair('a', 'b', nil)
+? 2
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 2 > Suite 1 > Case 2
+(cases remaining: 7)
+
+>>> from scheme_reader import *
+>>> read_line("(a b . c)")
+Choose the number of the correct choice:
+0) Pair('a', Pair('b', Pair('c')))
+1) Pair('a', Pair('b', 'c'))
+2) SyntaxError
+3) Pair('a', 'b', 'c')
+4) Pair('a', Pair('b', Pair('c', nil)))
+? 1
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 2 > Suite 1 > Case 3
+(cases remaining: 6)
+
+>>> from scheme_reader import *
+>>> read_line("(a b . c d)")
+Choose the number of the correct choice:
+0) Pair('a', Pair('b', Pair('c', 'd')))
+1) SyntaxError
+2) Pair('a', Pair('b', 'c'))
+3) Pair('a', Pair('b', Pair('c', Pair('d', nil))))
+? 1
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 2 > Suite 1 > Case 4
+(cases remaining: 5)
+
+>>> from scheme_reader import *
+>>> read_line("(a . (b . (c . ())))")
+Choose the number of the correct choice:
+0) Pair('a', Pair('b', Pair('c', nil)))
+1) SyntaxError
+2) Pair('a', Pair('b', Pair('c', Pair(nil, nil))))
+3) Pair('a', 'b', 'c')
+? 0
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 2 > Suite 1 > Case 5
+(cases remaining: 4)
+
+>>> from scheme_reader import *
+>>> read_line("(a . ((b . (c))))")
+Choose the number of the correct choice:
+0) Pair('a', Pair('b', Pair('c')), nil)
+1) Pair('a', Pair(Pair('b', Pair('c', nil)), nil))
+2) Pair('a', Pair('b', Pair('c', nil)), nil)
+3) Pair('a', Pair(Pair('b', Pair('c', nil)), nil), nil)
+? 1
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 2 > Suite 1 > Case 6
+(cases remaining: 3)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 2 > Suite 1 > Case 7
+(cases remaining: 2)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 2 > Suite 1 > Case 8
+(cases remaining: 1)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+OK! All cases for Problem 2 unlocked.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-148-140:scheme fuyuwei$ python3 ok -q 02 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 2 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> read_line("(a . b)")
+Traceback (most recent call last):
+  ...
+    return Pair(scheme_read(src), read_tail(src))
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 148, in read_tail
+    next_element = read_tail(src)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 148, in read_tail
+    next_element = read_tail(src)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 148, in read_tail
+    next_element = read_tail(src)
+  [Previous line repeated 983 more times]
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme_reader.py", line 139, in read_tail
+    if src.current() is None:
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/buffer.py", line 66, in current
+    while not self.more_on_line:
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/buffer.py", line 78, in more_on_line
+    return self.index < len(self.current_line)
+RecursionError: maximum recursion depth exceeded in comparison
+
+# Error: expected
+#     Pair('a', 'b')
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     RecursionError: maximum recursion depth exceeded in comparison
+
+Run only this test case with "python3 ok -q 02 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-148-140:scheme fuyuwei$ python3 ok -q 02 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 2 > Suite 1 > Case 1
+
+>>> from scheme_reader import *
+>>> read_line("(a . b)")
+SyntaxError: unexpected token: .
+
+# Error: expected
+#     Pair('a', 'b')
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SyntaxError: unexpected token: .
+
+Run only this test case with "python3 ok -q 02 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-148-140:scheme fuyuwei$ python3 ok -q 02 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    8 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-148-140:scheme fuyuwei$ python3 ok --submit
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+
+There are still locked tests! Use the -u option to unlock them
+---------------------------------------------------------------------
+Test summary
+    Locked: 4
+    16 test cases passed! No cases failed.
+
+Submit... 100% complete
+Submission successful for user: fuyuwei@berkeley.edu
+URL: https://okpy.org/cal/cs61a/sp18/proj04/submissions/vgBBG8
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-148-140:scheme fuyuwei$ python3 ok --submit
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+
+There are still locked tests! Use the -u option to unlock them
+---------------------------------------------------------------------
+Test summary
+    Locked: 4
+    16 test cases passed! No cases failed.
+
+Submit... 100% complete
+Submission successful for user: fuyuwei@berkeley.edu
+URL: https://okpy.org/cal/cs61a/sp18/proj04/submissions/k5nnp6
+
+Checking for software updates...
+OK is up to date
+airbears2-10-142-148-140:scheme fuyuwei$ python3 -m doctest scheme_reader.py -v
+Trying:
+    s = Pair(1, Pair(2, nil))
+Expecting nothing
+ok
+Trying:
+    s
+Expecting:
+    Pair(1, Pair(2, nil))
+ok
+Trying:
+    print(s)
+Expecting:
+    (1 2)
+ok
+Trying:
+    print(s.map(lambda x: x+4))
+Expecting:
+    (5 6)
+ok
+Trying:
+    read_tail(Buffer(tokenize_lines([')'])))
+Expecting:
+    nil
+ok
+Trying:
+    read_tail(Buffer(tokenize_lines(['2 3)'])))
+Expecting:
+    Pair(2, Pair(3, nil))
+ok
+Trying:
+    read_line('(1 . 2)')
+Expecting:
+    Pair(1, 2)
+ok
+Trying:
+    scheme_read(Buffer(tokenize_lines(['nil'])))
+Expecting:
+    nil
+ok
+Trying:
+    scheme_read(Buffer(tokenize_lines(['1'])))
+Expecting:
+    1
+ok
+Trying:
+    scheme_read(Buffer(tokenize_lines(['true'])))
+Expecting:
+    True
+ok
+Trying:
+    scheme_read(Buffer(tokenize_lines(['(+ 1 2)'])))
+Expecting:
+    Pair('+', Pair(1, Pair(2, nil)))
+ok
+12 items had no tests:
+    scheme_reader
+    scheme_reader.Pair.__eq__
+    scheme_reader.Pair.__init__
+    scheme_reader.Pair.__len__
+    scheme_reader.Pair.__repr__
+    scheme_reader.Pair.__str__
+    scheme_reader.Pair.map
+    scheme_reader.buffer_input
+    scheme_reader.buffer_lines
+    scheme_reader.read_line
+    scheme_reader.read_print_loop
+    scheme_reader.repl_str
+3 items passed all tests:
+   4 tests in scheme_reader.Pair
+   3 tests in scheme_reader.read_tail
+   4 tests in scheme_reader.scheme_read
+11 tests in 15 items.
+11 passed and 0 failed.
+Test passed.
+airbears2-10-142-148-140:scheme fuyuwei$ python3 scheme_reader.py
+read> 41
+str : 41
+repr: 41
+read> nil
+str : ()
+repr: nil
+read> (1.2)
+str : (1.2)
+repr: Pair(1.2, nil)
+read> (1 . 2)
+str : (1 . 2)
+repr: Pair(1, 2)
+read> (1 (2 3) (4 (5)))
+str : (1 (2 3) (4 (5)))
+repr: Pair(1, Pair(Pair(2, Pair(3, nil)), Pair(Pair(4, Pair(Pair(5, nil), nil)), nil)))
+read> (1 (9 8) . 7)
+str : (1 (9 8) . 7)
+repr: Pair(1, Pair(Pair(9, Pair(8, nil)), 7))
+read> (hi there . (cs . (student)))
+str : (hi there cs student)
+repr: Pair('hi', Pair('there', Pair('cs', Pair('student', nil))))
+read> (hi there . (cs . student))
+str : (hi there cs . student)
+repr: Pair('hi', Pair('there', Pair('cs', 'student')))
+read> 

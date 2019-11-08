@@ -1,0 +1,177 @@
+Last login: Sat Apr  7 17:45:42 on ttys000
+fuyuweideMacBook-Air:~ fuyuwei$ cd downloads/cs61a/scheme
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 04 -u
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Problem 4 > Suite 1 > Case 1
+(cases remaining: 4)
+
+>>> from scheme import *
+>>> env = create_global_frame()
+>>> twos = Pair(2, Pair(2, nil))
+>>> plus = PrimitiveProcedure(scheme_add) # + procedure
+>>> scheme_apply(plus, twos, env) # Type SchemeError if you think this errors
+? 4
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 4 > Suite 1 > Case 2
+(cases remaining: 3)
+
+>>> from scheme import *
+>>> env = create_global_frame()
+>>> twos = Pair(2, Pair(2, nil))
+>>> oddp = PrimitiveProcedure(scheme_oddp) # odd? procedure
+>>> scheme_apply(oddp, twos, env) # Type SchemeError if you think this errors
+? SchemeError
+-- OK! --
+
+---------------------------------------------------------------------
+Problem 4 > Suite 1 > Case 3
+(cases remaining: 2)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+Problem 4 > Suite 1 > Case 4
+(cases remaining: 1)
+
+-- Already unlocked --
+
+---------------------------------------------------------------------
+OK! All cases for Problem 4 unlocked.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 04 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 4 > Suite 1 > Case 1
+
+>>> from scheme import *
+>>> env = create_global_frame()
+>>> twos = Pair(2, Pair(2, nil))
+>>> plus = PrimitiveProcedure(scheme_add) # + procedure
+>>> scheme_apply(plus, twos, env) # Type SchemeError if you think this errors
+Traceback (most recent call last):
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 46, in scheme_apply
+    return procedure.apply(args, env)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 152, in apply
+    raise SchemeError('wrong number of arguments were passed')
+scheme_primitives.SchemeError: wrong number of arguments were passed
+
+# Error: expected
+#     4
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: wrong number of arguments were passed
+
+Run only this test case with "python3 ok -q 04 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 04 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Problem 4 > Suite 1 > Case 1
+
+>>> from scheme import *
+>>> env = create_global_frame()
+>>> twos = Pair(2, Pair(2, nil))
+>>> plus = PrimitiveProcedure(scheme_add) # + procedure
+>>> scheme_apply(plus, twos, env) # Type SchemeError if you think this errors
+Traceback (most recent call last):
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 46, in scheme_apply
+    return procedure.apply(args, env)
+  File "/Users/fuyuwei/Downloads/CS61A/scheme/scheme.py", line 152, in apply
+    raise SchemeError('wrong number of arguments were passed')
+scheme_primitives.SchemeError: wrong number of arguments were passed
+
+# Error: expected
+#     4
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     SchemeError: wrong number of arguments were passed
+
+Run only this test case with "python3 ok -q 04 --suite 1 --case 1"
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 04 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    4 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ python3 ok -q 04 
+=====================================================================
+Assignment: Project 4: Scheme Interpreter
+OK, version v1.13.11
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    4 test cases passed! No cases failed.
+
+Backup... 100% complete
+Backup successful for user: fuyuwei@berkeley.edu
+
+Checking for software updates...
+OK is up to date
+fuyuweideMacBook-Air:scheme fuyuwei$ 
